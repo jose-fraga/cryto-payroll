@@ -78,5 +78,6 @@
   "free": "Free",
   "contractors": "Contractors",
   "addContractor": "Add a contractor",
-  "payContractor": "Pay contractor"
+  "payContractor": "Pay contractor",
+  "contractorForm": "Contractor Form"
 }
