@@ -1,0 +1,30 @@
+export default [
+  // { type: 'apple-pay', number: '', cvv: '', expireDate: '', zipcode: '' },
+  {
+    id: 2,
+    type: 'amex',
+    number: '5244',
+    cvv: '233',
+    expireDate: '12/23',
+    zipcode: '980101',
+    default: false,
+  },
+  {
+    id: 3,
+    type: 'discover',
+    number: '0877',
+    cvv: '421',
+    expireDate: '10/24',
+    zipcode: '33010',
+    default: false,
+  },
+  {
+    id: 4,
+    type: 'visa',
+    number: '0877',
+    cvv: '531',
+    expireDate: '10/22',
+    zipcode: '33011',
+    default: true,
+  },
+];

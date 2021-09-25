@@ -1,0 +1,96 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "dev": "expo start",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "cache": "expo r -c"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint src/*.js --fix-dry-run"
+    ]
+  },
+  "dependencies": {
+    "@expo/react-native-action-sheet": "^3.8.0",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.3.3",
+    "@react-navigation/native": "^5.2.3",
+    "@react-navigation/stack": "^5.2.18",
+    "axios": "^0.19.2",
+    "date-fns": "^2.13.0",
+    "date-fns-tz": "^1.0.10",
+    "expo": "^42.0.0",
+    "expo-blur": "~9.0.3",
+    "expo-constants": "~11.0.1",
+    "expo-haptics": "~10.1.0",
+    "expo-image-picker": "~10.2.2",
+    "expo-linear-gradient": "~9.2.0",
+    "expo-localization": "~10.2.0",
+    "expo-permissions": "~12.1.1",
+    "expo-secure-store": "~10.2.0",
+    "expo-status-bar": "~1.0.4",
+    "formik": "^2.1.4",
+    "i18n-js": "^3.5.1",
+    "js-logger": "^1.6.0",
+    "lodash": "^4.17.15",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-animate-number": "^0.1.2",
+    "react-native-appearance": "~0.3.3",
+    "react-native-countdown-component": "^2.7.1",
+    "react-native-dotenv": "^0.2.0",
+    "react-native-flags": "^1.0.0",
+    "react-native-flip-card": "^3.5.6",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-modal": "^11.5.6",
+    "react-native-password-strength-checker": "^1.0.13",
+    "react-native-password-strength-meter": "^0.0.3",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-screens": "~3.4.0",
+    "react-native-skeleton-content": "^1.0.18",
+    "react-native-web": "~0.13.12",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "short-numbers": "^0.1.1",
+    "socket.io-client": "^2.3.0",
+    "validator": "^13.0.0",
+    "yup": "^0.28.5"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-expo": "8.3.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 120
+  },
+  "private": true
+}

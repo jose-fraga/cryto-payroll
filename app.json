@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Crypto Payroll",
+    "slug": "crypto-payroll",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "0.0.1 - beta",
+    "orientation": "portrait",
+    "icon": "./src/assets/icons/light.png",
+    "splash": {
+      "image": "./src/assets/splash/light.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
