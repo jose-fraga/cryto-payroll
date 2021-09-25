@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { StatusBar } from 'expo-status-bar';
-import SocketBackgroundProcess from './SocketBackgroundProcess';
 import AppSetupBackgroundProcess from './AppSetupBackgroundProcess';
 
 export default function BackgroundProcesses() {
@@ -22,7 +21,6 @@ export default function BackgroundProcesses() {
     <>
       <StatusBar style={barStyle(theme)} />
       <AppSetupBackgroundProcess />
-      <SocketBackgroundProcess />
     </>
   )
 }

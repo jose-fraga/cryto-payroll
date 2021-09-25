@@ -1,8 +1,7 @@
 import React from 'react'
-import { TouchableOpacity, StyleSheet } from 'react-native';
 import Modal from 'react-native-modal';
+import { StyleSheet } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AuthStackScreen } from '../routes';
 import appSettingsActions from '../store/actions/appSettingsActions';
 import ModalClose from '../components/ModalClose';
@@ -20,11 +19,12 @@ export default function Auth() {
     >
       <AuthStackScreen
         localOption={{
-          headerRight: () => 
-            <ModalClose 
-              colors={colors} 
+          headerRight: () => (
+            <ModalClose
+              colors={colors}
               onPress={() => dispatch(appSettingsActions.hideLoginPage())}
-            />,
+            />
+          )
         }} />
     </Modal>
   )

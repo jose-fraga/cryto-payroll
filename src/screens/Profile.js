@@ -243,8 +243,8 @@ function Profile({ navigation, user, session }) {
         </Text>
       </TouchableOpacity>
     ) : (
-        <View key={`${title}_${idx}`} />
-      );
+      <View key={`${title}_${idx}`} />
+    );
   };
 
   const renderLevel = () => {
@@ -262,7 +262,7 @@ function Profile({ navigation, user, session }) {
     );
   };
 
-  const UserInformation = () => (
+  const renderUserInformation = () => (
     <>
       <TouchableOpacity onPress={handleAvatarChange}>
         <View style={styles.avatarContainer(colors)}>
@@ -291,17 +291,6 @@ function Profile({ navigation, user, session }) {
     }
   }
 
-  const InviteFriendButton = () => (
-    <TouchableOpacity
-      style={styles.inviteButton(colors)}
-      onPress={handleShareApp}
-    >
-      <Text style={styles.buttonText(colors)}>
-        {i18n.t('inviteFriend')}
-      </Text>
-    </TouchableOpacity>
-  );
-
   return (
     <SafeAreaView>
       <ScrollView>
@@ -309,8 +298,8 @@ function Profile({ navigation, user, session }) {
           <View style={styles.containerlevel}>
             {renderLevel()}
           </View>
-          {UserInformation()}
-          {InviteFriendButton()}
+          {renderUserInformation()}
+          
           <View style={styles.profileLinks}>
             {links.map(profileItem)}
           </View>
@@ -372,18 +361,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
     letterSpacing: 1.5,
-  }),
-  inviteButton: colors => ({
-    backgroundColor: colors.shade10,
-    borderRadius: 30,
-    marginHorizontal: 20,
-    marginVertical: 30,
-  }),
-  buttonText: colors => ({
-    fontSize: 20,
-    color: colors.shade7,
-    marginHorizontal: '20%',
-    marginVertical: '5%',
   }),
   profileLinks: {
     marginTop: 10,

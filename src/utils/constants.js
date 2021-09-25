@@ -16,15 +16,24 @@ export const USER_TYPE = {
 };
 
 export const SCREENS = {
-  AUTH: 'AUTH',
+  /** Auth */
   APP: 'APP',
-  PLAYING: 'Playing',
-  PLAY: 'Play',
+  AUTH: 'Auth',
   LOGIN: 'Login',
-  EVENTS: 'Events',
   SIGNUP: 'Signup',
-  ACCOUNT: 'Account',
+
+  /** Prices */
+  PRICES: 'Prices',
+
+  /** Contractor */
+  CONTRACTOR: 'Contractor',
+
+  /** Profile */
   PROFILE: 'Profile',
+
+
+  PLAYING: 'Playing',
+  ACCOUNT: 'Account',
   BUSINESS: 'Business',
   LANGUAGE: 'Language',
   PAYMENTS: 'Payments',
